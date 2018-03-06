@@ -24,18 +24,36 @@ or
 ```js
 const camelKeys = require('camelcase-keys-object');
 
-const employee = {
-	ID: 127,
-	FIRST_Name: 'Huynh',
-	last_NAME: 'Ha',
-	salary: 1500
+const object = {
+	camelCase: 1,
+	UPPERCASE: 2,
+	lowercase: 3,
+	snake_case: 4,
+	PascalCase: 5,
+	'Title Case': 6,
+	'dot.case': 7,
+	'param-case': 8,
+	'Sentence case': 9,
+	'path/case': 10,
+	'Header-Case': 11
 };
 
-const res = camelKeys(employee);
+const res = camelKeys(object);
 
 console.log(res);
-
-// { id: 127, firstName: 'Huynh', lastName: 'Ha', salary: 1500 }
+/**
+{ camelCase: 1,
+  uppercase: 2,
+  lowercase: 3,
+  snakeCase: 4,
+  pascalCase: 5,
+  titleCase: 6,
+  dotCase: 7,
+  paramCase: 8,
+  sentenceCase: 9,
+  pathCase: 10,
+  headerCase: 11 }
+ */
 
 console.log(camelKeys(null)); // null
 console.log(camelKeys(undefined)); // null
@@ -55,18 +73,27 @@ console.log(camelKeys(undefined)); // null
 ##### Usage
 ```html
 <script>
-	const employee = {
-		ID: 127,
-		FIRST_Name: 'Huynh',
-		last_NAME: 'Ha',
-		salary: 1500
+
+	const object = {
+		camelCase: 1,
+		UPPERCASE: 2,
+		lowercase: 3,
+		snake_case: 4,
+		PascalCase: 5,
+		'Title Case': 6,
+		'dot.case': 7,
+		'param-case': 8,
+		'Sentence case': 9,
+		'path/case': 10,
+		'Header-Case': 11
 	};
 
-	const res = camelKeys(employee);
+	const res = camelKeys(object);
 
 	console.log(res);
 	console.log(camelKeys(null)); // null
 	console.log(camelKeys(undefined)); // null
+
 </script>
 ```
 
@@ -81,6 +108,7 @@ Returns a new object which keys is/are camelcased.
 + [js-camelcase](https://github.com/huynhsamha/js-camelcase)
 + [uppercase-keys-object](https://github.com/huynhsamha/uppercase-keys-object)
 + [lowercase-keys-object](https://github.com/huynhsamha/lowercase-keys-object)
++ [snakecase-keys-object](https://github.com/huynhsamha/snakecase-keys-object)
 
 
 [npm-image]: https://img.shields.io/npm/v/camelcase-keys-object.svg?style=flat
