@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 
-camelcase the keys of an object. Use for node.js and browser
+Camelcase the keys of an object. Use for node.js and browser
 
 It is useful for [oracledb](https://github.com/oracle/node-oracledb).
 
@@ -78,9 +78,9 @@ Returns a new object which keys is/are camelcased.
 
 
 ## Related
-[js-camelcase](https://github.com/huynhsamha/js-camelcase)
-[uppercase-keys-object](https://github.com/huynhsamha/uppercase-keys-object)
-[lowercase-keys-object](https://github.com/huynhsamha/lowercase-keys-object)
++ [js-camelcase](https://github.com/huynhsamha/js-camelcase)
++ [uppercase-keys-object](https://github.com/huynhsamha/uppercase-keys-object)
++ [lowercase-keys-object](https://github.com/huynhsamha/lowercase-keys-object)
 
 
 [npm-image]: https://img.shields.io/npm/v/camelcase-keys-object.svg?style=flat
