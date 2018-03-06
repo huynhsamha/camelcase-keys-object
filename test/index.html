@@ -1,0 +1,15 @@
+<script src="../dist/camelcase-keys-object.min.js"></script>
+<script>
+	const employee = {
+		ID: 127,
+		FIRST_Name: 'Huynh',
+		last_NAME: 'Ha',
+		salary: 1500
+	};
+
+	const res = camelKeys(employee);
+
+	console.log(res);
+	console.log(camelKeys(null));
+	console.log(camelKeys(undefined));
+</script>
