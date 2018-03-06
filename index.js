@@ -1,14 +1,15 @@
-function lowerKeys(obj) {
+const toCamelCase = require('js-camelcase');
+
+function camelKeys(obj) {
 
 	if (!obj) return null;
 
 	const res = {};
 	for (let key in obj) {
-		res[String(key).toLowerCase()] = obj[key];
+		res[toCamelCase(key)] = obj[key];
 	}
+
 	return res;
 }
 
-if (typeof module !== 'undefined' && module.exports) {
-	module.exports = lowerKeys;
-}
+module.exports = camelKeys;

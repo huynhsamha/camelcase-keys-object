@@ -22,29 +22,31 @@ or
 #### Node.JS
 
 ```js
-const lowerKeys = require('camelcase-keys-object');
+const camelKeys = require('camelcase-keys-object');
 
 const employee = {
 	ID: 127,
-	FIRST_Name: 'huynh',
-	last_NAME: 'ha',
+	FIRST_Name: 'Huynh',
+	last_NAME: 'Ha',
 	salary: 1500
 };
 
-const res = lowerKeys(employee);
+const res = camelKeys(employee);
 
 console.log(res);
 
-// { id: 127, first_name: 'huynh', last_name: 'ha', salary: 1500 }
+// { id: 127, firstName: 'Huynh', lastName: 'Ha', salary: 1500 }
 
-console.log(lowerKeys(null)); // null
-console.log(lowerKeys(undefined)); // null
+console.log(camelKeys(null)); // null
+console.log(camelKeys(undefined)); // null
 ```
 
 #### Browser
 ##### 1. NPM Package
 ```html
-<script src="./node_modules/camelcase-keys-object/index.js"></script>
+<script src="./node_modules/camelcase-keys-object/dist/camelcase-keys-object.js"></script>
+<!-- Or use minified-->
+<script src="./node_modules/camelcase-keys-object/dist/camelcase-keys-object.min.js"></script>
 ```
 ##### 2. Download from source
 ```html
@@ -60,23 +62,25 @@ console.log(lowerKeys(undefined)); // null
 		salary: 1500
 	};
 
-	const res = lowerKeys(employee);
+	const res = camelKeys(employee);
 
 	console.log(res);
-	console.log(lowerKeys(null)); // null
-	console.log(lowerKeys(undefined)); // null
+	console.log(camelKeys(null)); // null
+	console.log(camelKeys(undefined)); // null
 </script>
 ```
 
 ## API
 
-### lowerKeys(object)
+### camelKeys(object)
 
 Returns a new object which keys is/are camelcased.
 
 
 ## Related
+[js-camelcase](https://github.com/huynhsamha/js-camelcase)
 [uppercase-keys-object](https://github.com/huynhsamha/uppercase-keys-object)
+[lowercase-keys-object](https://github.com/huynhsamha/lowercase-keys-object)
 
 
 [npm-image]: https://img.shields.io/npm/v/camelcase-keys-object.svg?style=flat
